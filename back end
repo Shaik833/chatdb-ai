@@ -1,0 +1,12 @@
+# backend/__init__.py (dummy)
+backend_init_content = """
+# Dummy Azure Function - Backend code example
+
+def main(req):
+    user_input = req.get("query")
+    # Here you would call Azure OpenAI to generate SQL
+    sql_query = "SELECT * FROM dummy_table;"  # Dummy
+    # Then you would connect to Azure SQL Database
+    result = {"result": "Dummy Data Response"}
+    return result
+"""
